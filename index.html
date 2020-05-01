@@ -48,7 +48,7 @@
 		</div>
 		<div class="divider"></div>
 		<ul class="nav menu">
-			<li class="active"><a href="index.html"><em class="fa fa-bar-chart">&nbsp;</em> Trade Center</a></li>
+			<li><a href="index.html"><em class="fa fa-bar-chart">&nbsp;</em> Trade Center</a></li>
 			<li><a href="profile.html"><em class="fa fa-user">&nbsp;</em> Profile</a></li>
 			<li><a href="deposit.html"><em class="fa fa-btc">&nbsp;</em> Deposit</a></li>
 			<li><a href="withdrawal.html"><em class="fa fa-money">&nbsp;</em> Withdrawal</a></li>
@@ -83,14 +83,16 @@
 					<div class="chart-box">
 						<div class="welcome">Welcome:<span class="omam">Omam cc</span></div>
 						<div class="welcome">Balance:<span class="price">$0.00</span></div>
-						<div class="welcome">Trading plan:<div class=" btn-warning basic">Basic</div></div>
+						<div class="welcome">Trading plan:<div class=" btn-warning basic">Basic</div>
+							<div class="tprog">Trading Progress:<span class="percent">34%</span></div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4 middle">
 					<div class="chart-box">
 						<div class="trade-btcoin">
-							Trade Bitcoin with Leverage of up to 1:10; 
-							Our Bitcoin Spreads allow you to take short-term 
+							Trade Bitcoin with Leverage of up to 1:10;
+							Our Bitcoin Spreads allow you to take short-term
 							positions on the price of Bitcoin
 						</div>
 					</div>
@@ -98,8 +100,8 @@
 				<div class="col-md-4 right">
 					<div class="chart-box">
 						<div class="trade-btcoin">
-							Trade binary options and digital options with us. 
-							Pick the type of option that best suits your trading 
+							Trade binary options and digital options with us.
+							Pick the type of option that best suits your trading
 							style and profitability expectations.
 						</div>
 					</div>
@@ -112,31 +114,33 @@
 			<div class="place-trade col-md-5">
 				<div class="black-bg row">
 					<i class="fa fa-money fa-2x money-icon col-md-8"><span class="place-trade-head">Place
-							Trade</span></i>
-					<i class="fa fa-minus minus col-md-2"><span class="fa fa-remove remove"></span></i>
+							Trade</span>
+					</i>
 				</div>
 				<div class="white-bg">
-					<h6 class="balance">Available Balance ($):</h6>
-					<input type="text" class="balance-input" placeholder="0.00">
-					<h6 class="balance">Trade Type:</h6>
-					<select class="balance-input" name="trade_type" required="">
-						<option value="">---Choose Type---</option>
-						<option value="Binary">Binary</option>
-						<option value="Forex">Forex</option>
-					</select>
-					<button name="trade" type="submit" class="btn round btn-success btn-block btn-glow trade-now-btn">
-						TRADE NOW</button>
+					<form action="deposit.html">
+						<h6 class="balance">Available Balance ($):</h6>
+						<input type="text" class="balance-input" placeholder="0.00" disabled>
+						<h6 class="balance">Trade Type:</h6>
+						<select class="balance-input" name="trade_type" required>
+							<option value="">---Choose Type---</option>
+							<option value="Binary">Binary</option>
+							<option value="Forex">Forex</option>
+						</select>
+						<a href="deposit.html"><button name="trade" type="submit"
+								class="btn round btn-success btn-block btn-glow trade-now-btn">
+								TRADE NOW</button></a>
+					</form>
 				</div>
 			</div>
 			<div class="trade-history col-md-5">
 				<div class="trade-history-bg">
-					<div>
-						<i class="fa fa-bar-chart fa-2x money-icon col-md-8"><span class="place-trade-head">Trade
-								History</span></i>
-						<i class="fa fa-minus minus col-md-2"><span class="fa fa-remove remove"></span></i>
+					<div class="row">
+						<i class="fa fa-bar-chart fa-2x trade-money-icon col-md-2"></i>
+						<div class="trade-history-head col-md-5">Trade History</div>
 					</div>
-					<div class="trade-history-words">
-						<div>You do not have an active trade. Click trade now to start trading</div>
+					<div class="words">
+						You do not have an active trade. Click trade now to start trading
 					</div>
 				</div>
 			</div>

@@ -84,6 +84,7 @@
 					<div class="welcome">Welcome:<span class="omam">Omam cc</span></div>
 					<div class="welcome">Balance:<span class="price">$0.00</span></div>
 					<div class="welcome">Trading plan:<div class=" btn-warning basic">Basic</div>
+						<div class="tprog">Trading Progress:<span class="percent">34%</span></div>
 					</div>
 				</div>
 			</div>
@@ -92,50 +93,92 @@
 		<div class="row">
 			<div class="col-md-5 withdrawal-request-card">
 				<div class="dk-grey-bg row">
-					<i class="fa fa-money fa-2x withdrawal-request-card-icon col-md-9"> <span class="withdrawal-request-head">Withdrawal Request</span></i>
-					<i class="fa fa-minus minus col-md-2"><span class="fa fa-remove remove"></span></i>
+					<i class="fa fa-money fa-2x withdrawal-request-card-icon col-md-9"> <span
+							class="withdrawal-request-head">Withdrawal Request</span></i>
 				</div>
 				<div class="white-bg">
-					<h6 class="withdraw-method">Select Withdrawal Method</h6>
-					<select class="withdraw-method-input" name="trade_type" required="">
-						<option value="">---Select Method---</option>
-						<option value="Binary">Bitcoin</option>
-						<option value="Forex">Paypal</option>
-						<option value="Forex">Bank Transfer</option>
-					</select>
-					
-					<h6 class="withdraw-method">Enter Withdrawal Amount</h6>
-					<input type="text" class="withdraw-method-input" placeholder="0.00">
-					<button name="trade" type="submit" class="btn round btn-success btn-block btn-glow trade-now-btn">
-						<i class="fa fa-check-square"></i> Proceed</button>
+					<form action="#" method="post">
+						<h6 class="withdraw-method">Enter Bitcoin Wallet Address</h6>
+						<input type="text" class="withdraw-method-input" placeholder="Bitcoin address" required>
+
+						<h6 class="withdraw-method">Enter Withdrawal Amount</h6>
+						<input type="text" class="withdraw-method-input" placeholder="0.00" required>
+						<button name="trade" type="submit"
+							class="btn round btn-success btn-block btn-glow trade-now-btn" type="submit">
+							<i class="fa fa-check-square"></i> Proceed</button>
+					</form>
 				</div>
 			</div>
 			<div class="col-md-5 withdrawal-faq-card">
 				<div class="dk-grey-bg row">
 					<i class="fa fa-envelope-open fa-2x withdrawal-request-card-icon col-md-9"> <span
-							class="withdrawal-request-head">Withdrawal FAQ</span></i>
-					<i class="fa fa-minus minus col-md-2"><span class="fa fa-remove remove"></span></i>
+							class="withdrawal-request-head">Withdrawal FAQ</span>
+					</i>
 				</div>
 				<div class="withdrawal-faq-card-white-bg">
 					<div class="box-body withdrawal-faq-contents">
 						<h6 style="color: #1E9FF2;"><strong>Withdrawing Funds – How Does It Work? </strong></h6>
-						At CryptoExchangerz, we have designed our withdrawal process <br> to be as easy as our funding process. 
-						To begin the withdrawal <br> process first select your preferred withdrawal method and then type in the 
+						At CryptoExchangerz, we have designed our withdrawal process <br> to be as easy as our funding
+						process.
+						To begin the withdrawal <br> process first select your preferred withdrawal method and then type
+						in the
 						amount you want to withdraw and click "Proceed". <br><br>
-		
-						<h6 style="color: #1E9FF2;"><strong>What Methods Are There For Withdrawal Of Funds? </strong></h6>
-						CryptoExchangerz provides three(3) withdrawal methods (Bitcoin, Paypal, and Direct Bank Transfer). <br><br>
-		
-						<h6 style="color: #1E9FF2;"><strong>Must Withdrawal Requests Only Be Made At Certain Times? </strong></h6>
-						Requests for withdrawals can be made at any time via the CryptoExchangerz site. The requests will be processed immediately, and during the relevant financial institution's business hours.<br><br>
-		
+
+						<h6 style="color: #1E9FF2;"><strong>What Methods Are There For Withdrawal Of Funds? </strong>
+						</h6>
+						CryptoExchangerz provides three(3) withdrawal methods (Bitcoin, Paypal, and Direct Bank
+						Transfer). <br><br>
+
+						<h6 style="color: #1E9FF2;"><strong>Must Withdrawal Requests Only Be Made At Certain Times?
+							</strong></h6>
+						Requests for withdrawals can be made at any time via the CryptoExchangerz site. The requests
+						will be processed immediately, and during the relevant financial institution's business
+						hours.<br><br>
+
 						<h6 style="color: #1E9FF2;"><strong>Is There A Withdrawal Limit? </strong></h6>
 						Withdrawals are capped at the amount of funds that are currently in the account. <br><br>
-		
+
 						<h6 style="color: #1E9FF2;"><strong>How Long Does It Take To Get My Money? </strong></h6>
 						Withdrawal requests are addressed and handled as quickly as possible.
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="row container-fluid">
+			<div class="latest-deposit col-md-5">
+				<div class="ld-title">Latest Deposits</div>
+				<hr class="dw-line">
+
+				<table class="ld-table">
+					<tr>
+						<th>Name</th>
+						<th>Amount</th>
+						<th>Date</th>
+					</tr>
+					<tr>
+						<td>John Doe</td>
+						<td>$1000.00</td>
+						<td>02-12-2020</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="latest-withdrawal col-md-5">
+				<div class="lw-title">Latest Withdrawals</div>
+				<hr class="dw-line">
+				<table class="ld-table">
+					<tr>
+						<th>Name</th>
+						<th>Amount</th>
+						<th>Date</th>
+					</tr>
+					<tr>
+						<td>John Doe</td>
+						<td>$1000.00</td>
+						<td>02-12-2020</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 		<div class="footer">
