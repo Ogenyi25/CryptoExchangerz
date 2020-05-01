@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crypto-Exchangerz</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#"><span>Crypto-</span><strong>Exchangerz</strong></a>
+				<div class="user-icon">
+					<i class="fa fa-user-circle-o fa-2x user" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<div class="profile-sidebar">
+			<div class="profile-userpic">
+				<img src="http://placehold.it/50/30a5ff/fff" class="img-responsive" alt="">
+			</div>
+			<div class="profile-usertitle">
+				<div class="profile-usertitle-name">Username</div>
+				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="divider"></div>
+		<ul class="nav menu">
+			<li class="active"><a href="index.html"><em class="fa fa-bar-chart">&nbsp;</em> Trade Center</a></li>
+			<li><a href="profile.html"><em class="fa fa-user">&nbsp;</em> Profile</a></li>
+			<li><a href="deposit.html"><em class="fa fa-btc">&nbsp;</em> Deposit</a></li>
+			<li><a href="withdrawal.html"><em class="fa fa-money">&nbsp;</em> Withdrawal</a></li>
+			<li><a href="upgrade-account.html"><em class="fa fa-arrow-up">&nbsp;</em> Upgrade Account</a></li>
+			<li><a href="admin.html"><em class="fa fa-user-circle-o">&nbsp;</em> Admin</a></li>
+			<li><a href="login.html"><em class="fa fa-sign-out">&nbsp;</em> Logout</a></li>
+		</ul>
+	</div>
+	<!--/.sidebar-->
+
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#">
+						<em class="fa fa-home"></em>
+					</a></li>
+				<li class="active">Trade Center</li>
+			</ol>
+		</div>
+		<!--/.row-->
+
+		<div class="row header-title">
+			<div class="col-lg-12">
+				<h3 class="page-header">Trade Center</h3>
+			</div>
+		</div>
+		<!--/.row-->
+
+		<div class="">
+			<div class="row chart-section">
+				<div class="col-md-4 left">
+					<div class="chart-box">
+						<div class="welcome">Welcome:<span class="omam">Omam cc</span></div>
+						<div class="welcome">Balance:<span class="price">$0.00</span></div>
+						<div class="welcome">Trading plan:<div class=" btn-warning basic">Basic</div></div>
+					</div>
+				</div>
+				<div class="col-md-4 middle">
+					<div class="chart-box">
+						<div class="trade-btcoin">
+							Trade Bitcoin with Leverage of up to 1:10; 
+							Our Bitcoin Spreads allow you to take short-term 
+							positions on the price of Bitcoin
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 right">
+					<div class="chart-box">
+						<div class="trade-btcoin">
+							Trade binary options and digital options with us. 
+							Pick the type of option that best suits your trading 
+							style and profitability expectations.
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/.row-->
+		</div>
+
+		<div class="row">
+			<div class="place-trade col-md-5">
+				<div class="black-bg row">
+					<i class="fa fa-money fa-2x money-icon col-md-8"><span class="place-trade-head">Place
+							Trade</span></i>
+					<i class="fa fa-minus minus col-md-2"><span class="fa fa-remove remove"></span></i>
+				</div>
+				<div class="white-bg">
+					<h6 class="balance">Available Balance ($):</h6>
+					<input type="text" class="balance-input" placeholder="0.00">
+					<h6 class="balance">Trade Type:</h6>
+					<select class="balance-input" name="trade_type" required="">
+						<option value="">---Choose Type---</option>
+						<option value="Binary">Binary</option>
+						<option value="Forex">Forex</option>
+					</select>
+					<button name="trade" type="submit" class="btn round btn-success btn-block btn-glow trade-now-btn">
+						TRADE NOW</button>
+				</div>
+			</div>
+			<div class="trade-history col-md-5">
+				<div class="trade-history-bg">
+					<div>
+						<i class="fa fa-bar-chart fa-2x money-icon col-md-8"><span class="place-trade-head">Trade
+								History</span></i>
+						<i class="fa fa-minus minus col-md-2"><span class="fa fa-remove remove"></span></i>
+					</div>
+					<div class="trade-history-words">
+						<div>You do not have an active trade. Click trade now to start trading</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			© 2020 Crypto-Exchangerz. All Rights Reserved.
+		</div>
+
+	</div>
+	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		window.onload = function () {
+			var chart1 = document.getElementById("line-chart").getContext("2d");
+			window.myLine = new Chart(chart1).Line(lineChartData, {
+				responsive: true,
+				scaleLineColor: "rgba(0,0,0,.2)",
+				scaleGridLineColor: "rgba(0,0,0,.05)",
+				scaleFontColor: "#c5c7cc"
+			});
+		};
+	</script>
+
+</body>
+
+</html>
